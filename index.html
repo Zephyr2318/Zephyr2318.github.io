@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=3" />
+  <link rel="stylesheet" href="styles.css?v=4" />
   <script>
     // Apply the saved theme before first paint to avoid a flash.
     try {
@@ -86,17 +86,15 @@
       <h2>portfolio</h2>
       <div class="works">
         <figure class="work">
-          <!-- replace with <img src="assets/portfolio/..." alt="..."> or <video src="assets/portfolio/....mp4" muted autoplay loop playsinline></video> -->
-          <div class="work-media">[ video coming soon ]</div>
+          <div class="work-media"><video src="assets/media/soft-grasping.mp4" poster="assets/media/soft-grasping.jpg" muted autoplay loop playsinline preload="metadata" aria-label="Soft robot grasping targets across the workspace"></video></div>
           <figcaption>
             <h3>whole-body soft grasping</h3>
-            <p>A soft robot grasping everyday objects with a flow-matching policy learned from only 30 demonstrations (97.5% success).</p>
+            <p>Whole-body grasping of objects of varying size across the workspace, using a flow-matching policy learned from only 30 demonstrations.</p>
             <p class="tags">RA-L 2026 · flow matching</p>
           </figcaption>
         </figure>
         <figure class="work">
-          <!-- replace with <img src="assets/portfolio/..." alt="..."> or <video src="assets/portfolio/....mp4" muted autoplay loop playsinline></video> -->
-          <div class="work-media">[ image coming soon ]</div>
+          <div class="work-media letterbox"><video src="assets/media/cable-driven.mp4" poster="assets/media/cable-driven.jpg" muted autoplay loop playsinline preload="metadata" aria-label="Cable-driven continuum robot bending"></video></div>
           <figcaption>
             <h3>cable-driven continuum robot</h3>
             <p>Lightweight kinematic and static modeling of a cable-driven continuum robot via an actuation-space energy formulation.</p>
@@ -104,8 +102,7 @@
           </figcaption>
         </figure>
         <figure class="work">
-          <!-- replace with <img src="assets/portfolio/..." alt="..."> or <video src="assets/portfolio/....mp4" muted autoplay loop playsinline></video> -->
-          <div class="work-media">[ video coming soon ]</div>
+          <div class="work-media"><video src="assets/media/tendon-driven.mp4" poster="assets/media/tendon-driven.jpg" muted autoplay loop playsinline preload="metadata" aria-label="Tendon-driven continuum robot wrapping around headphones"></video></div>
           <figcaption>
             <h3>tendon-driven continuum robot</h3>
             <p>A unified multi-dynamics framework for perception-oriented modeling in tendon-driven continuum robots.</p>
@@ -113,8 +110,7 @@
           </figcaption>
         </figure>
         <figure class="work">
-          <!-- replace with <img src="assets/portfolio/..." alt="..."> or <video src="assets/portfolio/....mp4" muted autoplay loop playsinline></video> -->
-          <div class="work-media">[ image coming soon ]</div>
+          <div class="work-media"><img src="assets/media/nandina-planter.jpg" alt="Slope nandina planting machine on a dirt slope" loading="lazy" /></div>
           <figcaption>
             <h3>slope nandina planting machine</h3>
             <p>An integrated transport-and-planting machine for mountain slopes. National First Prize, 10th National Mechanical Innovation Design Competition.</p>
@@ -186,8 +182,7 @@
             <p>AI that perceives, understands, and acts in the physical world. I am interested in giving robots physical common sense (contact, deformation, and dynamics) so that what they perceive and learn turns into safe, reliable actions on real hardware, from soft and continuum robots to everyday manipulation.</p>
             <p class="tags">embodied intelligence · world models · vision-language-action · sim-to-real</p>
           </div>
-          <!-- replace with <img src="assets/research/..." alt="..."> -->
-          <div class="figure-slot">[ concept figure ]</div>
+          <div class="figure-slot"><img src="assets/media/physical-ai.webp" alt="Concept figure: perception, a physics world model, and robot action in a closed loop" loading="lazy" /></div>
         </article>
         <article class="card card-figure">
           <div class="card-text">
@@ -195,8 +190,7 @@
             <p>Letting robots mentally simulate interactions with objects they have never seen before acting. By combining physics-based simulation, geometric reasoning, and learning from demonstrations and large language models, a robot can imagine what an unfamiliar object affords and how to use it, without massive labeled datasets. See the lab's <a href="https://chirikjianlab.github.io/affordance-imagination-dictionary/" target="_blank" rel="noopener">affordance imagination</a> project.</p>
             <p class="tags">affordance imagination · physics simulation · LLM reasoning · unseen objects</p>
           </div>
-          <!-- replace with <img src="assets/research/..." alt="..."> -->
-          <div class="figure-slot">[ concept figure ]</div>
+          <div class="figure-slot"><img src="assets/media/robot-imagination.webp" alt="Concept figure: a robot imagining possible uses of an unfamiliar object before acting" loading="lazy" /></div>
         </article>
         <article class="card card-figure">
           <div class="card-text">
@@ -204,8 +198,7 @@
             <p>Lightweight kinematic, static, and dynamic models for cable-, tendon-, and rod-driven continuum robots built on actuation-space energy formulations, together with data-efficient learning from demonstrations for whole-body soft grasping and compliant continuum joints with tunable stiffness.</p>
             <p class="tags">actuation-space modeling · flow matching · compliant mechanisms</p>
           </div>
-          <!-- replace with <img src="assets/research/..." alt="..."> -->
-          <div class="figure-slot">[ concept figure ]</div>
+          <div class="figure-slot"><img src="assets/media/continuum-robots.webp" alt="Concept figure: a cable-driven continuum robot wrapping around a pole" loading="lazy" /></div>
         </article>
       </div>
     </section>
