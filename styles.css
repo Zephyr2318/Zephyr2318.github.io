@@ -405,6 +405,7 @@ h3 { font-size: 15px; font-weight: 600; }
 /* ───────── Misc ───────── */
 .misc-item { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: start; }
 .misc-item p { margin: 0; }
+.misc-text .timeline { margin-top: 10px; }
 .misc-photo { margin: 0; border: 1px solid var(--faint); border-radius: 4px; overflow: hidden; }
 .misc-photo img { display: block; width: 100%; height: auto; }
 
