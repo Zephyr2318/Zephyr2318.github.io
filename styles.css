@@ -391,11 +391,13 @@ h3 { font-size: 15px; font-weight: 600; }
   font-size: 13px;
   overflow: hidden;
 }
-.work-media { aspect-ratio: 16 / 9; }
+.work-media { position: relative; aspect-ratio: 16 / 9; }
 .work-media:has(img, video),
 .figure-slot:has(img) { border-style: solid; }
 .work-media img,
-.work-media video { display: block; width: 100%; height: 100%; object-fit: cover; }
+.work-media video { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; }
+.work-media.letterbox { background: #0e0f10; }
+.work-media.letterbox video { object-fit: contain; }
 .work figcaption { margin-top: 10px; }
 .work h3 { color: var(--accent); margin-bottom: 2px; }
 .work p { margin: 0 0 4px; }
