@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=2" />
   <script>
     // Apply the saved theme before first paint to avoid a flash.
     try {
@@ -23,7 +23,7 @@
       if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t);
     } catch (e) {}
   </script>
-  <script src="scripts.js" defer></script>
+  <script src="scripts.js?v=2" defer></script>
 </head>
 <body>
   <header class="topbar">
@@ -69,10 +69,13 @@
       </div>
 
       <figure class="portrait">
-        <div class="portrait-frame">
+        <button class="portrait-frame" type="button" aria-pressed="false" aria-label="Show photo of Yuhao Wang">
           <img src="assets/images/avatar.jpg" alt="Portrait of Yuhao Wang" onerror="this.remove()" />
-          <span class="portrait-fallback" aria-hidden="true">YW</span>
-        </div>
+          <span class="portrait-cover" aria-hidden="true">
+            <span class="portrait-initials">YW</span>
+            <span class="portrait-hint"><span class="hover">hover to reveal</span><span class="tap">tap to reveal</span></span>
+          </span>
+        </button>
         <figcaption>Bend, don't break.<br />Stay healthy.</figcaption>
       </figure>
     </section>
