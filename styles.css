@@ -376,3 +376,36 @@ h3 { font-size: 15px; font-weight: 600; }
 }
 
 .placeholder { color: var(--muted); font-style: italic; }
+
+/* ───────── Portfolio ───────── */
+.works { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px 24px; }
+.work { margin: 0; }
+.work-media,
+.figure-slot {
+  display: grid;
+  place-items: center;
+  border: 1px dashed var(--faint);
+  border-radius: 4px;
+  background: var(--bg-elev);
+  color: var(--muted);
+  font-size: 13px;
+  overflow: hidden;
+}
+.work-media { aspect-ratio: 16 / 9; }
+.work-media:has(img, video),
+.figure-slot:has(img) { border-style: solid; }
+.work-media img,
+.work-media video { display: block; width: 100%; height: 100%; object-fit: cover; }
+.work figcaption { margin-top: 10px; }
+.work h3 { color: var(--accent); margin-bottom: 2px; }
+.work p { margin: 0 0 4px; }
+
+/* ───────── Research figures ───────── */
+.card-figure { display: grid; grid-template-columns: 1fr 260px; gap: 24px; align-items: start; }
+.figure-slot { aspect-ratio: 4 / 3; }
+.figure-slot img { display: block; width: 100%; height: 100%; object-fit: contain; }
+
+@media (max-width: 720px) {
+  .works { grid-template-columns: 1fr; }
+  .card-figure { grid-template-columns: 1fr; gap: 12px; }
+}
