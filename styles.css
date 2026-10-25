@@ -402,6 +402,12 @@ h3 { font-size: 15px; font-weight: 600; }
 .work h3 { color: var(--accent); margin-bottom: 2px; }
 .work p { margin: 0 0 4px; }
 
+/* ───────── Misc ───────── */
+.misc-item { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: start; }
+.misc-item p { margin: 0; }
+.misc-photo { margin: 0; border: 1px solid var(--faint); border-radius: 4px; overflow: hidden; }
+.misc-photo img { display: block; width: 100%; height: auto; }
+
 /* ───────── Research figures ───────── */
 .card-figure { display: grid; grid-template-columns: 1fr 260px; gap: 24px; align-items: start; }
 .figure-slot { aspect-ratio: 4 / 3; }
@@ -410,4 +416,5 @@ h3 { font-size: 15px; font-weight: 600; }
 @media (max-width: 720px) {
   .works { grid-template-columns: 1fr; }
   .card-figure { grid-template-columns: 1fr; gap: 12px; }
+  .misc-item { grid-template-columns: 1fr; gap: 12px; }
 }
