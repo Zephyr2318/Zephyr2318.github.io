@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=2" />
+  <link rel="stylesheet" href="styles.css?v=3" />
   <script>
     // Apply the saved theme before first paint to avoid a flash.
     try {
@@ -30,6 +30,7 @@
     <div class="topbar-inner">
       <a class="prompt" href="#top" aria-label="Back to top">zephyr@mbzuai:~$<span class="cursor" aria-hidden="true"></span></a>
       <nav class="nav" aria-label="Main">
+        <a href="#portfolio">Portfolio/</a>
         <a href="#publications">Publications/</a>
         <a href="#experience">Experience/</a>
         <a href="#contact">Contact/</a>
@@ -80,29 +81,54 @@
       </figure>
     </section>
 
+    <!-- ───────────── Portfolio ───────────── -->
+    <section id="portfolio">
+      <h2>portfolio</h2>
+      <div class="works">
+        <figure class="work">
+          <!-- replace with <img src="assets/portfolio/..." alt="..."> or <video src="assets/portfolio/....mp4" muted autoplay loop playsinline></video> -->
+          <div class="work-media">[ video coming soon ]</div>
+          <figcaption>
+            <h3>whole-body soft grasping</h3>
+            <p>A soft robot grasping everyday objects with a flow-matching policy learned from only 30 demonstrations (97.5% success).</p>
+            <p class="tags">RA-L 2026 · flow matching</p>
+          </figcaption>
+        </figure>
+        <figure class="work">
+          <!-- replace with <img src="assets/portfolio/..." alt="..."> or <video src="assets/portfolio/....mp4" muted autoplay loop playsinline></video> -->
+          <div class="work-media">[ image coming soon ]</div>
+          <figcaption>
+            <h3>cable-driven continuum robot</h3>
+            <p>Lightweight kinematic and static modeling of a cable-driven continuum robot via an actuation-space energy formulation.</p>
+            <p class="tags">RA-L 2026 · actuation-space modeling</p>
+          </figcaption>
+        </figure>
+        <figure class="work">
+          <!-- replace with <img src="assets/portfolio/..." alt="..."> or <video src="assets/portfolio/....mp4" muted autoplay loop playsinline></video> -->
+          <div class="work-media">[ video coming soon ]</div>
+          <figcaption>
+            <h3>tendon-driven continuum robot</h3>
+            <p>A unified multi-dynamics framework for perception-oriented modeling in tendon-driven continuum robots.</p>
+            <p class="tags">RA-L 2026 · perception · dynamics</p>
+          </figcaption>
+        </figure>
+        <figure class="work">
+          <!-- replace with <img src="assets/portfolio/..." alt="..."> or <video src="assets/portfolio/....mp4" muted autoplay loop playsinline></video> -->
+          <div class="work-media">[ image coming soon ]</div>
+          <figcaption>
+            <h3>slope nandina planting machine</h3>
+            <p>An integrated transport-and-planting machine for mountain slopes. National First Prize, 10th National Mechanical Innovation Design Competition.</p>
+            <p class="tags">2022 · project leader</p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
     <!-- ───────────── Publications ───────────── -->
     <section id="publications">
-      <h2>publications</h2>
-      <p class="note"><sup>†</sup> co-first author</p>
+      <h2>selected publications</h2>
+      <p class="note"><sup>†</sup> co-first author · full list on <a href="https://scholar.google.com/citations?user=vl4I390AAAAJ" target="_blank" rel="noopener">Google Scholar</a></p>
       <ol class="pubs">
-        <li class="pub">
-          <div class="pub-meta"><span class="badge">RA-L 2026</span></div>
-          <div class="pub-body">
-            <h3>Lightweight Dynamic Modeling of Cable-Driven Continuum Robots Based on Actuation-Space Energy Formulation</h3>
-            <p class="authors">Fangju Yang, Hang Yang, Ibrahim Alsarraj, <b>Yuhao Wang</b>, Zhengqiang Zhang, Ke Wu</p>
-            <p class="venue">IEEE Robotics and Automation Letters, vol. 11, no. 11, pp. 12487–12494</p>
-            <p class="pub-links"><a href="https://doi.org/10.1109/LRA.2026.3732908" target="_blank" rel="noopener">[doi]</a></p>
-          </div>
-        </li>
-        <li class="pub">
-          <div class="pub-meta"><span class="badge">RA-L 2026</span></div>
-          <div class="pub-body">
-            <h3>A Unified Multi-Dynamics Framework for Perception-Oriented Modeling in Tendon-Driven Continuum Robots</h3>
-            <p class="authors">Ibrahim Alsarraj, <b>Yuhao Wang</b>, Abdalla Swikir, Cesare Stefanini, Dezhen Song, Zhanchi Wang, Ke Wu</p>
-            <p class="venue">IEEE Robotics and Automation Letters, vol. 11, no. 7, pp. 8777–8784</p>
-            <p class="pub-links"><a href="https://doi.org/10.1109/LRA.2026.3701125" target="_blank" rel="noopener">[doi]</a></p>
-          </div>
-        </li>
         <li class="pub">
           <div class="pub-meta"><span class="badge">RA-L 2026</span></div>
           <div class="pub-body">
@@ -122,21 +148,12 @@
           </div>
         </li>
         <li class="pub">
-          <div class="pub-meta"><span class="badge">T-MECH 2026</span></div>
+          <div class="pub-meta"><span class="badge">RA-L 2026</span></div>
           <div class="pub-body">
-            <h3>Vector-Space Global Collocation Method for Modeling Rod-Driven Parallel Continuum Manipulators</h3>
-            <p class="authors">Ke Wu, Qidi Sun, <b>Yuhao Wang</b>, Xinyu Li, Gang Zheng, Rui Chen</p>
-            <p class="venue">IEEE/ASME Transactions on Mechatronics</p>
-            <p class="pub-links"><a href="https://doi.org/10.1109/TMECH.2026.3694012" target="_blank" rel="noopener">[doi]</a></p>
-          </div>
-        </li>
-        <li class="pub">
-          <div class="pub-meta"><span class="badge">T-MECH 2026</span></div>
-          <div class="pub-body">
-            <h3>A Rod-Driven Minimally Invasive Bioprinting Continuum Robotic System for Repairing Knee Joint Cartilage Defects</h3>
-            <p class="authors">Xinyu Li, Qian Tang, Wei Liu, <b>Yuhao Wang</b>, Ying Zhang, Gang Zheng, Ke Wu</p>
-            <p class="venue">IEEE/ASME Transactions on Mechatronics</p>
-            <p class="pub-links"><a href="https://doi.org/10.1109/TMECH.2026.3670164" target="_blank" rel="noopener">[doi]</a></p>
+            <h3>A Unified Multi-Dynamics Framework for Perception-Oriented Modeling in Tendon-Driven Continuum Robots</h3>
+            <p class="authors">Ibrahim Alsarraj, <b>Yuhao Wang</b>, Abdalla Swikir, Cesare Stefanini, Dezhen Song, Zhanchi Wang, Ke Wu</p>
+            <p class="venue">IEEE Robotics and Automation Letters, vol. 11, no. 7, pp. 8777–8784</p>
+            <p class="pub-links"><a href="https://doi.org/10.1109/LRA.2026.3701125" target="_blank" rel="noopener">[doi]</a></p>
           </div>
         </li>
       </ol>
@@ -163,42 +180,32 @@
     <section id="research">
       <h2>research</h2>
       <div class="cards">
-        <article class="card">
-          <h3>01 · physical AI</h3>
-          <p>AI that perceives, understands, and acts in the physical world. I am interested in giving robots physical common sense (contact, deformation, and dynamics) so that what they perceive and learn turns into safe, reliable actions on real hardware, from soft and continuum robots to everyday manipulation.</p>
-          <p class="tags">embodied intelligence · world models · vision-language-action · sim-to-real</p>
+        <article class="card card-figure">
+          <div class="card-text">
+            <h3>01 · physical AI</h3>
+            <p>AI that perceives, understands, and acts in the physical world. I am interested in giving robots physical common sense (contact, deformation, and dynamics) so that what they perceive and learn turns into safe, reliable actions on real hardware, from soft and continuum robots to everyday manipulation.</p>
+            <p class="tags">embodied intelligence · world models · vision-language-action · sim-to-real</p>
+          </div>
+          <!-- replace with <img src="assets/research/..." alt="..."> -->
+          <div class="figure-slot">[ concept figure ]</div>
         </article>
-        <article class="card">
-          <h3>02 · robot imagination</h3>
-          <p>Letting robots mentally simulate interactions with objects they have never seen before acting. By combining physics-based simulation, geometric reasoning, and learning from demonstrations and large language models, a robot can imagine what an unfamiliar object affords and how to use it, without massive labeled datasets. See the lab's <a href="https://chirikjianlab.github.io/affordance-imagination-dictionary/" target="_blank" rel="noopener">affordance imagination</a> project.</p>
-          <p class="tags">affordance imagination · physics simulation · LLM reasoning · unseen objects</p>
+        <article class="card card-figure">
+          <div class="card-text">
+            <h3>02 · robot imagination</h3>
+            <p>Letting robots mentally simulate interactions with objects they have never seen before acting. By combining physics-based simulation, geometric reasoning, and learning from demonstrations and large language models, a robot can imagine what an unfamiliar object affords and how to use it, without massive labeled datasets. See the lab's <a href="https://chirikjianlab.github.io/affordance-imagination-dictionary/" target="_blank" rel="noopener">affordance imagination</a> project.</p>
+            <p class="tags">affordance imagination · physics simulation · LLM reasoning · unseen objects</p>
+          </div>
+          <!-- replace with <img src="assets/research/..." alt="..."> -->
+          <div class="figure-slot">[ concept figure ]</div>
         </article>
-        <article class="card">
-          <h3>03 · continuum robots</h3>
-          <p>Lightweight kinematic, static, and dynamic models for cable-, tendon-, and rod-driven continuum robots built on actuation-space energy formulations, together with data-efficient learning from demonstrations for whole-body soft grasping and compliant continuum joints with tunable stiffness.</p>
-          <p class="tags">actuation-space modeling · flow matching · compliant mechanisms</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- ───────────── Projects ───────────── -->
-    <section id="projects">
-      <h2>projects</h2>
-      <div class="cards">
-        <article class="card">
-          <h3>01 · flow-matching soft grasping</h3>
-          <p>An actuation-space learning framework that uses flow matching for whole-body soft robotic grasping. It reaches a <b>97.5%</b> success rate and generalizes well from only <b>30 demonstrations</b>. I led the algorithm implementation and experimental validation.</p>
-          <p class="tags">MBZUAI · 2025.03–2026.03 · RA-L 2026</p>
-        </article>
-        <article class="card">
-          <h3>02 · compliant continuum joints</h3>
-          <p>Studied how structural parameters of a spatial curved-beam continuum joint shape its flexibility and stiffness, and proposed an adjustable-stiffness design approach.</p>
-          <p class="tags">Chongqing University · 2023.09–2026.06 · master's thesis</p>
-        </article>
-        <article class="card">
-          <h3>03 · slope nandina planting machine</h3>
-          <p>An integrated transport-and-planting machine for <i>Nandina domestica</i> on mountain slopes, with adaptive leveling, linkage feeding, and positioning drill/backfill modules. It won the <b>National First Prize</b> and became a granted invention patent.</p>
-          <p class="tags">project leader · 2021.10–2022.08 · ecological restoration</p>
+        <article class="card card-figure">
+          <div class="card-text">
+            <h3>03 · continuum robots</h3>
+            <p>Lightweight kinematic, static, and dynamic models for cable-, tendon-, and rod-driven continuum robots built on actuation-space energy formulations, together with data-efficient learning from demonstrations for whole-body soft grasping and compliant continuum joints with tunable stiffness.</p>
+            <p class="tags">actuation-space modeling · flow matching · compliant mechanisms</p>
+          </div>
+          <!-- replace with <img src="assets/research/..." alt="..."> -->
+          <div class="figure-slot">[ concept figure ]</div>
         </article>
       </div>
     </section>
